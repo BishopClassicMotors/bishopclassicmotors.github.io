@@ -1,4 +1,5 @@
 ﻿using Statiq.App;
+using Statiq.Common;
 using Statiq.Web;
 using System.Threading.Tasks;
 
@@ -11,6 +12,12 @@ namespace BishopClassicMotors
             return await Bootstrapper
                 .Factory
                 .CreateWeb(args)
+                .DeployToGitHubPagesBranch(
+                    "bishopclassicmotors",
+                    "bishopclassicmotors.github.io",
+                    Config.FromSetting<string>("GITHUB_TOKEN"),
+                    "main"
+                )
                 .RunAsync();
         }
     }
