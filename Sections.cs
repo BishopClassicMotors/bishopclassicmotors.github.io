@@ -1,4 +1,4 @@
-﻿namespace BishopClassicMotors
+namespace BishopClassicMotors
 {
     public static class Sections
     {
