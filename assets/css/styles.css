@@ -1,6 +1,8 @@
 html { height: 100%; }
 
-body { height: 100%; min-height: 35rem; position: relative; font-family: 'Gidole', 'Gill Sans', 'Gill Sans MT', sans-serif; font-weight: 300; background: url("../bg.webp") #d62b28 no-repeat center center scroll; background-size: cover; }
+body { height: 100%; min-height: 35rem; position: relative; font-family: 'Gidole', 'Gill Sans', 'Gill Sans MT', sans-serif; font-size: 1.2rem; background: url("../bg.webp") #d62b28 no-repeat center center scroll; background-size: cover; color: white; }
+
+p { margin: 1rem; }
 
 a, a:active, a:hover, a:visited { color: #141b23; }
 
@@ -10,14 +12,9 @@ a, a:active, a:hover, a:visited { color: #141b23; }
 
 .masthead .masthead-bg { z-index: -1; position: absolute; top: 0; bottom: 0; right: 0; left: 0; width: 100%; min-height: 35rem; height: 100%; background-color: rgba(214, 43, 40, 0.8); transform: skewY(4deg); transform-origin: bottom right; }
 
-.masthead .masthead-content p { font-size: 1.2rem; }
-
-.masthead .masthead-content p strong { font-weight: 700; }
-
-@media (min-width: 768px) { .masthead { height: 100%; min-height: 0; width: 40.5rem; padding-bottom: 0; }
+@media (min-width: 768px) { .masthead { height: 100%; min-height: 0; width: 60rem; padding-bottom: 0; }
   .masthead .masthead-bg { min-height: 0; transform: skewX(-8deg); transform-origin: top right; }
-  .masthead .masthead-content { padding-left: 3rem; padding-right: 10rem; }
-  .masthead .masthead-content p { font-size: 1.3rem; } }
+  .masthead .masthead-content { padding-left: 3rem; padding-right: 10rem; } }
 
 .social-icons { position: absolute; margin-bottom: 2rem; width: 100%; z-index: 2; }
 
