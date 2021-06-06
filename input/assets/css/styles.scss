@@ -1,11 +1,6 @@
 $primary: #d62b28 !default;
 $secondary: #141b23 !default;
-@mixin background-cover {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 @mixin body-font {
   font-family: 'Gidole', 'Gill Sans', 'Gill Sans MT', sans-serif;
   font-weight: 300;
@@ -49,6 +44,7 @@ a:visited {
   z-index: 2;
 
   .masthead-bg {
+    z-index: -1;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -72,6 +68,7 @@ a:visited {
     }
   }
 }
+
 @media (min-width: 768px) {
   .masthead {
     height: 100%;
@@ -125,6 +122,7 @@ a:visited {
     }
   }
 }
+
 @media (min-width: 768px) {
   .social-icons {
     margin: 0;

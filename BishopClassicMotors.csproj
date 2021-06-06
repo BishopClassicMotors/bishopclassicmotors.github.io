@@ -6,14 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Statiq.Web" Version="1.0.0-beta.28" />
+    <PackageReference Include="Statiq.Web" Version="1.0.0-beta.30" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="input\" />
     <Folder Include="input\assets\" />
     <Folder Include="input\assets\favicons\" />
-    <Folder Include="input\assets\bootstrap\" />
     <Folder Include="input\assets\css\" />
   </ItemGroup>
 </Project>
