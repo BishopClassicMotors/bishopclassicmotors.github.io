@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bishop Classic Motors</title>
+    <title>@Document.GetString("Title", "Home") | Bishop Classic Motors</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
@@ -27,12 +27,51 @@
 <body role="document">
     <div class="overlay"></div>
 
+    <nav class="navbar navbar-dark navbar-expand-xxl fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkServices">
+                            <li><a class="dropdown-item" href="xref:restoration">Restoration</a></li>
+                            <li><a class="dropdown-item" href="xref:used-classics">Used Classics</a></li>
+                            <li><a class="dropdown-item" href="xref:transportation">Transportation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="xref:work">Work</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkLocation" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Location
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLocation">
+                            <li><a class="dropdown-item" href="xref:showroom">Showroom</a></li>
+                            <li><a class="dropdown-item" href="xref:workshop">Workshop</a></li>
+                            <li><a class="dropdown-item" href="xref:finishing-room">Finishing Room</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="xref:about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="masthead">
         <div class="masthead-bg"></div>
+
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 my-auto">
-                    <div class="masthead-content text-white py-5 py-md-0">
+                    <div class="masthead-content py-5 py-md-0">
                         @RenderBody()
                     </div>
                 </div>
