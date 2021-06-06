@@ -33,7 +33,7 @@
                 <span><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto mb-5 mb-lg-0">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
@@ -48,10 +48,10 @@
                         <a class="nav-link" href="xref:work">Work</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkLocation" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Location
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkLocations" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Locations
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLocation">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLocations">
                             <li><a class="dropdown-item" href="xref:showroom">Showroom</a></li>
                             <li><a class="dropdown-item" href="xref:workshop">Workshop</a></li>
                             <li><a class="dropdown-item" href="xref:finishing-room">Finishing Room</a></li>
@@ -71,6 +71,11 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 my-auto">
+                    @if (!Document.GetBool("Home", false))
+                    {
+                        <img src="/assets/logo.svg" alt="Logo" class="p-5">
+                    }
+
                     <div class="masthead-content py-5 py-md-0">
                         @RenderBody()
                     </div>
@@ -80,7 +85,7 @@
     </div>
 
     <div class="social-icons">
-        <ul class="list-unstyled text-center mb-0">
+        <ul class="list-unstyled text-center">
             <li class="list-unstyled-item">
                 <a href="https://www.facebook.com/BishopClassicMotors">
                     <i class="fab fa-facebook-f"></i>
