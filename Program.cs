@@ -12,12 +12,6 @@ namespace BishopClassicMotors
             return await Bootstrapper
                 .Factory
                 .CreateWeb(args)
-                .DeployToGitHubPagesBranch(
-                    "bishopclassicmotors",
-                    "bishopclassicmotors.github.io",
-                    Config.FromSetting<string>("GITHUB_TOKEN"),
-                    "main"
-                )
                 .RunAsync();
         }
     }

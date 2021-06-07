@@ -1,0 +1,6 @@
+Host: bishopclassicmotors.com
+LinksUseHttps: true
+GitHubOwner: bishopclassicmotors
+GitHubName: bishopclassicmotors.github.io
+GitHubToken: => Config.FromSetting<string>("GITHUB_TOKEN")
+GitHubBranch: main
