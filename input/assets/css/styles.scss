@@ -42,13 +42,18 @@ a:visited {
   z-index: 1;
 }
 
-.masthead {
+.navbar-collapse {
+  background-color: $secondary;
+  padding-left: .5rem;
+}
+
+.content {
   position: relative;
   overflow: hidden;
   padding-bottom: 3rem;
   z-index: 2;
 
-  .masthead-bg {
+  .content-bg {
     z-index: -1;
     position: absolute;
     top: 0;
@@ -59,25 +64,27 @@ a:visited {
     min-height: 35rem;
     height: 100%;
     background-color: fade-out($primary, 0.2);
-    transform: skewY(4deg);
-    transform-origin: bottom right;
   }
 }
 
 @media (min-width: 768px) {
-  .masthead {
+  .navbar-collapse {
+    background-color: inherit;
+  }
+
+  .content {
     height: 100%;
     min-height: 0;
     width: 60rem;
     padding-bottom: 0;
 
-    .masthead-bg {
+    .content-bg {
       min-height: 0;
       transform: skewX(-8deg);
       transform-origin: top right;
     }
 
-    .masthead-content {
+    .content-body {
       padding-left: 3rem;
       padding-right: 10rem;
     }
