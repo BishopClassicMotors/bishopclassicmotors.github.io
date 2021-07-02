@@ -70,13 +70,15 @@
 
         <div class="container h-100">
             <div class="row h-100">
-                <div class="col-12 my-auto">
+                <div class="col-12 my-auto content-body">
                     @if (!Document.GetBool("Home", false))
                     {
-                        <img src="/assets/logo.svg" alt="Logo" class="img-fluid p-5">
+                        <a href="/">
+                            <img src="/assets/logo.svg" alt="Logo" class="img-fluid p-5">
+                        </a>
                     }
 
-                    <div class="content-body py-5 py-md-0">
+                    <div class="py-5 py-md-0">
                         @RenderBody()
                     </div>
                 </div>
