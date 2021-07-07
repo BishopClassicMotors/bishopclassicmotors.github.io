@@ -14,5 +14,6 @@
     <Folder Include="input\assets\" />
     <Folder Include="input\assets\favicons\" />
     <Folder Include="input\assets\css\" />
+    <Folder Include="input\work\" />
   </ItemGroup>
 </Project>
