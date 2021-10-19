@@ -1,0 +1,30 @@
+@model IDocument
+
+<div id="carousel" class="carousel slide p-2" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        @for (int i = 0; i < Outputs.FilterSources($"assets/work/{Document.GetString(Constants.VehicleId)}/*.webp").Count; i++)
+        {
+            var aria = i == 0 ? "class=\"active\" aria-current=\"true\"" : string.Empty;
+
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="@i" @Html.Raw(aria) aria-label="Slide @(i + 1)"></button>
+        }
+    </div>
+    <div class="carousel-inner rounded">
+        @for (int i = 1; i <= Outputs.FilterSources($"assets/work/{Document.GetString(Constants.VehicleId)}/*.webp").Count; i++)
+        {
+            var active = i == 1 ? "active" : string.Empty;
+
+            <div class="@active carousel-item">
+                <img src="/assets/work/@Document.GetString(Constants.VehicleId)/@(i).webp" class="d-block w-100" alt="Slide @i">
+            </div>
+        }
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
