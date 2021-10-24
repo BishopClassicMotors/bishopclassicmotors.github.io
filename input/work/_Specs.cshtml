@@ -1,0 +1,28 @@
+@model IDocument
+
+<h2>Technical Specifications</h2>
+
+<table class="table table-sm">
+    <tbody>
+        <tr>
+            <th scope="row">Model</th>
+            <td>@Document.GetString(Constants.Model)</td>
+        </tr>
+        <tr>
+            <th scope="row">Engine</th>
+            <td>@Document.GetString(Constants.Engine)</td>
+        </tr>
+        <tr>
+            <th scope="row">Transmission</th>
+            <td>@Document.GetString(Constants.Transmission)</td>
+        </tr>
+        <tr>
+            <th scope="row">Exterior Color</th>
+            <td>@Document.GetString(Constants.ExteriorColor)</td>
+        </tr>
+        <tr>
+            <th scope="row">Interior Color</th>
+            <td>@Document.GetString(Constants.InteriorColor)</td>
+        </tr>
+    </tbody>
+</table>

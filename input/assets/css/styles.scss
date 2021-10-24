@@ -31,6 +31,10 @@ a:visited {
   color: $secondary;
 }
 
+th, td {
+  color: white;
+}
+
 .overlay {
   position: absolute;
   top: 0;
