@@ -3,7 +3,7 @@ Title: "Work"
 <h1>@Document.GetTitle()</h1>
 <p>Our team has completed hundreds of projects over decades. A few of our most recent:</p>
 <ul>
-    @foreach (IDocument post in Outputs.FilterSources("work/*").OrderBy(p => p.GetString(Constants.VehicleId)))
+    @foreach (IDocument post in Outputs.FromPipeline("Content").FilterSources("work/*").OrderBy(p => p.GetString(Constants.VehicleId)))
     {
         <li>@Html.DocumentLink(post)</li>
     }
