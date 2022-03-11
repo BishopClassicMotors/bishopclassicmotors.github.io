@@ -1,0 +1,39 @@
+html { height: 100%; }
+
+body { height: 100%; min-height: 35rem; position: relative; font-family: "Gidole", "Gill Sans", "Gill Sans MT", sans-serif; font-size: 1.2rem; background: url("../bg.webp") #d62b28 no-repeat center center scroll; background-size: cover; color: white; }
+
+p { margin: 1rem; }
+
+a, a:active, a:hover, a:visited { color: #141b23; }
+
+th, td { color: white; }
+
+.overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: #141b23; opacity: 0.7; z-index: 1; }
+
+.navbar-collapse { background-color: #141b23; padding-left: 0.5rem; }
+
+.content { position: relative; display: flex; flex-direction: column; overflow: hidden; padding-bottom: 3rem; z-index: 2; }
+
+.content .content-bg { z-index: -1; position: absolute; top: 0; bottom: 0; right: 0; left: 0; width: 100%; min-height: 35rem; height: 100%; background-color: rgba(214, 43, 40, 0.8); }
+
+.content .content-body { height: 100%; overflow-y: auto; }
+
+@media (min-width: 768px) { .navbar-collapse { background-color: inherit; }
+  .content { height: 100%; min-height: 0; width: 70%; padding-bottom: 0; }
+  .content .content-bg { min-height: 0; transform: skewX(-8deg); transform-origin: top right; }
+  .content .content-body { padding-left: 3rem; padding-right: 10rem; } }
+
+.social-icons { position: absolute; margin-bottom: 2rem; width: 100%; z-index: 2; }
+
+.social-icons ul { margin-top: 2rem; width: 100%; text-align: center; }
+
+.social-icons ul > li { margin-left: 1rem; margin-right: 1rem; display: inline-block; }
+
+.social-icons ul > li > a { display: block; color: white; background-color: rgba(214, 43, 40, 0.8); border-radius: 100%; font-size: 2rem; line-height: 4rem; height: 4rem; width: 4rem; }
+
+@media (min-width: 768px) { .social-icons { margin: 0; position: absolute; right: 2.5rem; bottom: 2rem; width: auto; }
+  .social-icons ul { margin-top: 0; width: auto; }
+  .social-icons ul > li { display: block; margin-left: 0; margin-right: 0; margin-bottom: 2rem; }
+  .social-icons ul > li:last-child { margin-bottom: 0; }
+  .social-icons ul > li > a { transition: all 0.2s ease-in-out; font-size: 2rem; line-height: 4rem; height: 4rem; width: 4rem; }
+  .social-icons ul > li > a:hover { background-color: #d62b28; } }
